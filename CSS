@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100&display=swap');
+
+html {
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      #ccc,
+      #ccc 1px,
+      transparent 1px,
+      transparent 10px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      #ccc,
+      #ccc 1px,
+      transparent 1px,
+      transparent 10px
+    );
+}
+
+body {
+  display: grid;
+  margin: 0;
+  place-items: center;
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+svg{
+  margin:0 auto;
+}
+#star2{
+  stroke: #888;
+  stroke-width: 0.25px;
+  animation: star2 6s ease-in-out 10 forwards;
+  color: gold;
+}
+
+@keyframes star2{
+  0%{
+    d:path("M 40.432786,14.399879 50.438369,8.8121623 50.591222,31.233181 34.651001,4.9188983 29.95264,12.79648");
+  }
+  
+    50%{
+    d:path("M 48.407908,26.883198 64.326188,36.592145 33.324107,34.729358 59.80417,20.973251 42.317751,20.843142");
+  }
+  
+  100%{
+    d:path("M 54.484292,30.720914 64.326188,36.592145 44.985443,47.935028 59.80417,20.973251 50.632803,20.843142")
+  }
+}
